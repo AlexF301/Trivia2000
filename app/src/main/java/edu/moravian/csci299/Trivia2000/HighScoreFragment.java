@@ -63,7 +63,7 @@ public class HighScoreFragment extends Fragment {
     /**
      * @param savedInstanceState
      */
-/*
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -74,8 +74,8 @@ public class HighScoreFragment extends Fragment {
             updatesUI();
         });
         sortHighScores();
-        highScore.score = getArguments().getInt(GAME_SCORE);
-    }*/
+        this.score = getArguments().getInt(GAME_SCORE);
+    }
 
     /**
      * Create the view from the layout and saves references to all of the important
@@ -116,7 +116,7 @@ public class HighScoreFragment extends Fragment {
      *
      */
     private void updatesUI() {
-        for (int i : this.scoresSorted) {
+        for (int i = 0; i < this.highScores.size(); i++) {
             names.setText(highScores.get(i).player_name);
             scores.setText(highScores.get(i).score);
         }

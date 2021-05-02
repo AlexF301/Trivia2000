@@ -1,9 +1,7 @@
 <resources>
     <string name="app_name" translatable="false">Trivia 2000</string>
     <string name="play">Play</string>
-    <string name="game_title" translatable="false">TRIVIA 2000</string>
     <string name="music">Music</string>
-    <string name="play_music">Music?</string>
     <string name="background">background</string>
     <string-array name="modes">
         <item>Easy</item>
@@ -15,7 +13,6 @@
     <string name="basketball">BASKETBALL</string>
     <string name="movies">MOVIES</string>
     <string name="random">RANDOM</string>
-    <string name="event_icon" translatable="false" />
     <string name="play_again">Play Again</string>
     <string name="score_description">Your Score:</string>
     <string name="player_name">Your Name:</string>

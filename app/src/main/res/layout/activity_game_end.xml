@@ -63,9 +63,8 @@
         android:inputType="textPersonName"
         tools:ignore="LabelFor" />
 
-    <androidx.fragment.app.FragmentContainerView
+    <FrameLayout
         android:id="@+id/fragment"
-        android:name="edu.moravian.csci299.Trivia2000.HighScoreFragment"
         android:layout_width="match_parent"
         android:layout_height="214dp"
         app:layout_constraintBottom_toBottomOf="parent"
