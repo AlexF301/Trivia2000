@@ -19,8 +19,6 @@ import android.widget.Spinner;
 public class MainActivity extends MenuActivity implements View.OnClickListener {
     private Spinner gameDifficulty;
     private SharedPreferences preferences;
-    @SuppressLint("UseSwitchCompatOrMaterialCode")
-
     /**
      *
      */

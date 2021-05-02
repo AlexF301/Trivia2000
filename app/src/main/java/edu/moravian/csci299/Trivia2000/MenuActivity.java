@@ -2,6 +2,7 @@ package edu.moravian.csci299.Trivia2000;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.media.MediaPlayer;
@@ -16,6 +17,7 @@ import android.widget.Switch;
 * Class For Menu to be accessible to all activities
 */
 public class MenuActivity extends AppCompatActivity {
+    @SuppressLint("UseSwitchCompatOrMaterialCode")
     private Switch musicSwitch;
     private MediaPlayer mediaPlayer;
     private SharedPreferences preferences;
