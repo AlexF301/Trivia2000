@@ -1,9 +1,12 @@
 package edu.moravian.csci299.Trivia2000;
 
+import android.content.Context;
+
 import androidx.lifecycle.ViewModel;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
+import java.util.ResourceBundle;
 
 /**
 * The Trivia game that keeps track of the score, the question, the number of questions,
@@ -103,9 +106,9 @@ public class TriviaGame extends ViewModel {
      * @param difficulty the difficulty choses
      */
     public void setDifficulty(String difficulty) {
-        if (difficulty.equals("Easy")) {
+        if (difficulty.equals("Easy") || difficulty.equals("Fácil")) {
             setNumberOfQuestions(5);
-        } else if (difficulty.equals("Medium")) {
+        } else if (difficulty.equals("Medium") || difficulty.equals("Medio")) {
             setNumberOfQuestions(7);
         } else {
             setNumberOfQuestions(10);

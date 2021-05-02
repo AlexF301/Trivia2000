@@ -21,6 +21,9 @@ import java.util.List;
 
 public class HighScoreFragment extends Fragment {
 
+    public HighScoreFragment() {
+        // Required empty public constructor
+    }
     /**
      * the high scores in a sorted list
      */
@@ -47,11 +50,12 @@ public class HighScoreFragment extends Fragment {
      *
      * @return a new instance of fragment HighScoreFragment
      */
-    public static HighScoreFragment newInstance(HighScore highScore) {
+
+    public static HighScoreFragment newInstance(String topic, int score) {
         HighScoreFragment fragment = new HighScoreFragment();
         Bundle args = new Bundle();
-        args.putInt(GAME_SCORE, highScore.score);
-        args.putString(ARG_SCORES_ID, highScore.topicType);
+        args.putInt(GAME_SCORE, score);
+        args.putString(ARG_SCORES_ID, topic);
         fragment.setArguments(args);
         return fragment;
     }
@@ -59,6 +63,7 @@ public class HighScoreFragment extends Fragment {
     /**
      * @param savedInstanceState
      */
+/*
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -70,7 +75,7 @@ public class HighScoreFragment extends Fragment {
         });
         sortHighScores();
         highScore.score = getArguments().getInt(GAME_SCORE);
-    }
+    }*/
 
     /**
      * Create the view from the layout and saves references to all of the important

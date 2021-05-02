@@ -10,10 +10,8 @@ import androidx.room.PrimaryKey;
 @Entity
 public class HighScore {
     @PrimaryKey
-    @NonNull
     public int id;
-    @NonNull
-    public int score;
+    public int score = 0;
     @NonNull
     public String topicType = "";
     @NonNull

@@ -34,7 +34,6 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
     private String topic;
     private Random random = new Random();
     private TextView askedQuestion;
-    private HighScore score;
 
     // Settings for being able to swipe
     private float x1, x2;
@@ -88,9 +87,9 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
             Intent endGame = new Intent(this, GameEndActivity.class);
             endGame.putExtra("Game Topic", this.topic);
             endGame.putExtra("Game Score",  this.triviaGame.getScore());
-
             endGame.putExtra("Game Difficulty", this.difficulty);
             startActivity(endGame);
+            finish();
         }
         updateUI();
     }
@@ -134,7 +133,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         Button button = findViewById(id);
         if (button.getText() == question.answer) {
             triviaGame.updateScore();
-        };
+        }
     }
 
     /**

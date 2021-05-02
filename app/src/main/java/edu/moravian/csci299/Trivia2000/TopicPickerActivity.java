@@ -15,7 +15,7 @@ import java.util.List;
 /**
 * The activity that allows for users to pick a topic
 */
-public class TopicPickerActivity extends MenuActivity implements View.OnClickListener {
+public class TopicPickerActivity extends AppCompatActivity implements View.OnClickListener {
     private String difficulty;
     private String topic;
 

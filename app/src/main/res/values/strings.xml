@@ -20,4 +20,6 @@
     <string name="score_description">Your Score:</string>
     <string name="player_name">Your Name:</string>
     <string name="swipe_information">Swipe the screen to get a new question!</string>
+    <string name="_2000" translatable="false">2000</string>
+    <string name="trivia" translatable="false">TRIVIA</string>
 </resources>

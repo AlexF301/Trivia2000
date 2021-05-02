@@ -12,10 +12,10 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class GameEndActivity extends AppCompatActivity implements View.OnClickListener, TextWatcher {
-    private HighScoreFragment highScoreFragment;
     private String difficulty;
     private String topic;
-    private HighScore score;
+    private int score;
+    private EditText playerName;
 
     /**
      * Sets the variables of difficulty and topic with intents, as well as setting the score
@@ -28,20 +28,21 @@ public class GameEndActivity extends AppCompatActivity implements View.OnClickLi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game_end);
 
-        this.score.score = getIntent().getIntExtra("Game Score", 0);
+        this.score = getIntent().getIntExtra("Game Score", 0);
         this.difficulty = getIntent().getStringExtra("Game Difficulty");
-        this.score.topicType = getIntent().getStringExtra("Game Topic");
+        this.topic = getIntent().getStringExtra("Game Topic");
 
         TextView score_box = findViewById(R.id.score);
-        score_box.setText(Integer.toString(score.score));
+        score_box.setText(Integer.toString(score));
 
-        EditText player_name = findViewById(R.id.name_box);
+        this.playerName = findViewById(R.id.name_box);
+        playerName.addTextChangedListener(this);
+
 
         Button button = findViewById(R.id.play_again);
         button.setOnClickListener(this);
-
-
-        highScoreFragment = HighScoreFragment.newInstance(this.score);
+        
+        HighScoreFragment highScoreFragment = HighScoreFragment.newInstance(topic, score);
         getSupportFragmentManager()
                 .beginTransaction()
                 .add(R.id.fragment, highScoreFragment)
@@ -62,18 +63,33 @@ public class GameEndActivity extends AppCompatActivity implements View.OnClickLi
         finish();
     }
 
+    /**
+     *  Required as part of listener but leave empty
+     * @param s
+     * @param start
+     * @param count
+     * @param after
+     */
     @Override
     public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-
     }
 
+    /**
+     * Required as part of listener but leave empty
+     * @param s
+     * @param start
+     * @param before
+     * @param count
+     */
     @Override
     public void onTextChanged(CharSequence s, int start, int before, int count) {
-
     }
 
+    /**
+     * Required as part of listener but leave empty
+     * @param edited
+     */
     @Override
-    public void afterTextChanged(Editable s) {
-
+    public void afterTextChanged(Editable edited) {
     }
 }
