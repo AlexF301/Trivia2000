@@ -50,7 +50,7 @@
         app:layout_constraintVertical_bias="0.684" />
 
     <TextView
-        android:background="@color/white"
+        android:background="@drawable/gradient_3"
         android:gravity="center"
         android:id="@+id/asked_question"
         android:textColor="@color/black"

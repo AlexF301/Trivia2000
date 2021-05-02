@@ -18,6 +18,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+            
+            <TextView
+            android:textColor="@color/white"
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/soccer"
+            android:layout_gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
             <ImageView
                 android:id="@+id/SoccerImageView"
                 android:layout_width="wrap_content"
@@ -31,16 +41,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/begin_quiz" />
-
+            
             <TextView
                 android:textColor="@color/white"
-                android:id="@+id/textView"
+                android:id="@+id/textView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/soccer"
+                android:text="@string/basketball"
                 android:layout_gravity="center"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
-
             <ImageView
                 android:id="@+id/BasketballImageView"
                 android:layout_width="wrap_content"
@@ -54,15 +63,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/begin_quiz" />
-
             <TextView
                 android:textColor="@color/white"
-                android:id="@+id/textView2"
+                android:id="@+id/textView3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/basketball"
+                android:text="@string/music"
                 android:layout_gravity="center"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
+
             <ImageView
                 android:id="@+id/MusicImageView"
                 android:layout_width="wrap_content"
@@ -78,11 +87,11 @@
                 android:text="@string/begin_quiz" />
 
             <TextView
-                android:textColor="@color/white"
-                android:id="@+id/textView3"
+                android:id="@+id/textView4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/music"
+                android:text="@string/movies"
+                android:textColor="@color/white"
                 android:layout_gravity="center"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
@@ -101,13 +110,14 @@
                 android:text="@string/begin_quiz" />
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/textView5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/movies"
+                android:text="@string/random"
                 android:textColor="@color/white"
                 android:layout_gravity="center"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
+            
             <ImageView
                 android:id="@+id/RandomImageView"
                 android:layout_width="match_parent"
@@ -121,15 +131,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/begin_quiz" />
-
-            <TextView
-                android:id="@+id/textView5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/random"
-                android:textColor="@color/white"
-                android:layout_gravity="center"
-                android:textAppearance="?android:attr/textAppearanceLarge" />
         </LinearLayout>
     </ScrollView>
 
