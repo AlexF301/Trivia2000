@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Trivia 2000</string>
+    <string name="play">Jugar</string>
+    <string name="music">"música "</string>
+    <string name="play_music">¿música?</string>
+    <string name="background">el fondo</string>
+    <string name="begin_quiz">Comenzar Examen</string>
+    <string name="soccer">Fútbol</string>
+    <string name="basketball">Baloncesto</string>
+    <string name="movies">Películas</string>
+    <string name="random">Cualquiera</string>
+    <string-array name="modes">
+        <item>Fácil</item>
+        <item>Medio</item>
+        <item>Difícil</item>
+    </string-array>
+    <string name="play_again">Jugar otravez</string>
+    <string name="player_name">Tu Nombre:</string>
+    <string name="score_description">Tús Puntos:</string>
+    <string name="swipe_information">¡Deslizar la pantalla a la derecha para una nueva pregunta!</string>
+</resources>
