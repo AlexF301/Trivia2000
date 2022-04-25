@@ -104,6 +104,7 @@ public class HighScoreFragment extends Fragment {
     private void comparesScores() {
         if (this.highScores.isEmpty()) {
             this.scoresSorted.add(this.score);
+
         }
         for (int i = 0; i < this.highScores.size(); i++) {
             if (this.score > highScores.get(i).score) {

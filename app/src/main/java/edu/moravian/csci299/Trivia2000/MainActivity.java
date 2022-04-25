@@ -12,7 +12,6 @@ import android.widget.Button;
 import android.widget.Spinner;
 
 /**
- * Creates the shared preferences variable
  *
  * Authors: Alexander Flores Sosa and Edwin Cojitambo
  */

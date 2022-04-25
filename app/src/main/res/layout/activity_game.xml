@@ -53,7 +53,7 @@
         android:background="@drawable/gradient_3"
         android:gravity="center"
         android:id="@+id/asked_question"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         app:autoSizeTextType="uniform"
         android:layout_width="316dp"
         android:layout_height="95dp"
